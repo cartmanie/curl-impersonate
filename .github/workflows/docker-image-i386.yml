@@ -28,6 +28,7 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         context: chrome/
+        file: chrome/Dockerfile.alpine
         platforms: linux/386
         push: true
         tags: southpark426/curl-impersonate:${{ github.ref_name }}-i686
